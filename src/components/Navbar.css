@@ -1,0 +1,93 @@
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: white; /* or use your preferred background */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  }
+  
+  .container {
+    margin: 0 auto;
+    padding: 0 2rem;
+  }
+  
+  .header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:white;
+    height: 100px;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .logo-symbol {
+    width: 48px;
+    height: 48px;
+    background: blue;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    box-shadow: 0 10px 20px rgba(0, 102, 255, 0.2);
+  }
+  
+  .logo-text {
+    font-size: 1.5rem;
+    font-weight: 700;
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: blue;
+  }
+  
+  .logo-text span {
+    display: block;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: black;
+    opacity: 0.9;
+  }
+  
+  nav ul {
+    display: flex;
+    list-style-type: none;
+    gap: 2.5rem;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    font-size: 1rem;
+  }
+  
+  .cta-button {
+    background: blue;
+    color: white;
+    padding: 0.75rem 1.75rem;
+    border-radius: 16px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 10px 20px rgba(0, 102, 255, 0.15);
+  }
+  
