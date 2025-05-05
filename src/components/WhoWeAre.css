@@ -1,35 +1,90 @@
-/* WhoWeAre Section Styles */
-.who-we-are {
-    padding: 60px 20px;
-    background-color: #f4f4f4;
+.who-we-are-section {
+  padding: 40px 20px;
+  background-color: #f5f5f5; /* Light background for the intro part */
+}
+
+.text-box {
+  margin-bottom: 24px;
+  color: #0a1015;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 32px;
+}
+
+.who-we-are-image {
+  width: 100%;
+  max-width: 480px;
+  height: auto;
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* Mission & Vision container styling */
+.mission-vision-container {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 32px;
+}
+
+.mission-box,
+.vision-box {
+  flex: 1 1 300px;
+  background-color: rgb(0, 170, 187); /* Blue background */
+  padding: 24px;
+  border-radius: 16px;
+  color: white;
+  max-width: 500px;
+}
+
+/* Optional: bullet styling */
+.mission-box ul,
+.vision-box ul {
+  padding-left: 20px;
+}
+
+.mission-box li,
+.vision-box li {
+  margin-bottom: 12px;
+  line-height: 1.6;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .who-we-are-section {
+    padding: 24px 16px;
+  }
+
+  .text-box h1 {
+    font-size: 24px;
     text-align: center;
   }
-  
-  .who-we-are .container {
-    max-width: 800px;
-    margin: 0 auto;
+
+  .text-box p,
+  .text-box li {
+    font-size: 16px;
   }
-  
-  .who-we-are h2 {
-    font-size: 36px;
-    color: #333;
-    margin-bottom: 20px;
+
+  .who-we-are-image {
+    max-width: 100%;
+    border-radius: 12px;
   }
-  
-  .who-we-are p {
-    font-size: 18px;
-    color: #555;
-    line-height: 1.6;
+
+  .mission-vision-container {
+    flex-direction: column;
+    align-items: center;
   }
-  
-  /* Mobile responsive */
-  @media (max-width: 768px) {
-    .who-we-are h2 {
-      font-size: 28px;
-    }
-  
-    .who-we-are p {
-      font-size: 16px;
-    }
+
+  .mission-box,
+  .vision-box {
+    width: 100%;
+    padding: 16px;
   }
-  
+}
