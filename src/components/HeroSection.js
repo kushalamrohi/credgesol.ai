@@ -1,5 +1,6 @@
 import React from "react";
 import "./HeroSection.css"; 
+import heroImg from "../assets/heroImg.avif";
 const HeroSection = () => {
   return (
     <section className="hero">
@@ -18,10 +19,7 @@ const HeroSection = () => {
           </div>
         </div>
         <div className="hero-image">
-          <img
-            src="/api/placeholder/600/400"
-            alt="AI business transformation"
-          />
+        <img src={heroImg} alt="AI Illustration" />
         </div>
       </div>
     </section>

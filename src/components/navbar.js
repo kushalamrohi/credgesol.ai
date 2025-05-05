@@ -1,5 +1,6 @@
 import React from "react";
-import "./Navbar.css"; 
+import "./Navbar.css";
+
 const Navbar = () => {
   return (
     <header>
@@ -13,10 +14,11 @@ const Navbar = () => {
         </div>
         <nav>
           <ul className="navbar">
-            <li><a href="#solutions">Solutions</a></li>
-            <li><a href="#about">About Us</a></li>
-            <li><a href="#datasets">Datasets</a></li>
-            <li><a href="#contact">Contact</a></li>
+          <li><a href="#home">Home</a></li>
+            <li><a href="#whatwedo">What We Do</a></li>
+            <li><a href="#whoweare">Who We Are</a></li>
+            <li><a href="#career">Career</a></li>
+            <li><a href="#contact">ContactUs</a></li>
           </ul>
         </nav>
         <button className="cta-button">Get Started</button>
